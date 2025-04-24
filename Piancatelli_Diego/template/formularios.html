@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario</title>
+</head>
+<body>
+
+  <nav>
+    <h2>Bienvenido</h2>
+    <a href="index.html">inicio</a><br>
+    <a href="galeria.html">Galeria</a><br>
+    <a href="tabla.html">Tabla</a><br>
+    <a href="listas.html">Listas</a><br>
+    <a href="formularios.html">Formularios</a><br>
+    <a href="https://www.google.com" target="_blank">Google</a><br>
+  </nav>
+
+  <h1>Formulario de registro</h1>
+
+  
+  <form action="https://formspree.io/f/xdkeyewd" method="POST">
+
+    
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" required><br>
+
+    
+    <label for="fecha">Fecha de nacimiento:</label>
+    <input type="date" id="fecha" name="fecha"><br>
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" min="0"><br>
+
+    
+    <h2>Género:</h2>
+    <input type="radio" name="genero" value="M"> Masculino<br>
+    <input type="radio" name="genero" value="F"> Femenino<br>
+    <input type="radio" name="genero" value="Otro"> Otro<br>
+
+    
+    <h2>Área a desarrollarse:</h2>
+    <input type="radio" name="area" value="App web"> App web<br>
+    <input type="radio" name="area" value="Análisis de datos"> Análisis de datos<br>
+    <input type="radio" name="area" value="Desarrollo de juegos"> Desarrollo de juegos<br>
+
+    
+    <h2>Tecnologías que maneja:</h2>
+    <input type="checkbox" name="tecnologia" value="HTML"> HTML<br>
+    <input type="checkbox" name="tecnologia" value="CSS"> CSS<br>
+    <input type="checkbox" name="tecnologia" value="JS"> JS<br>
+<br>
+    
+    <label for="navegador"><h2>Navegador preferido:</h2></label>
+    <select name="navegador" id="navegador">
+      <option value="Chrome">Chrome</option>
+      <option value="Opera">Opera</option>
+      <option value="Safari">Safari</option>
+      <option value="Firefox">Firefox</option>
+      <option value="Edge">Edge</option>
+    </select><br>
+<br>
+    
+    <fieldset>
+      <legend><h2>Datos personales</h2></legend>
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono"><br>
+
+      <label for="archivo">Adjuntar archivo:</label>
+      <input type="file" id="archivo" name="archivo"><br>
+    </fieldset>
+
+    
+    <label for="comentarios"><h2>Comentarios:</h2></label>
+    <textarea name="comentarios" id="comentarios" cols="30" rows="5"></textarea><br>
+
+    
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Borrar">
+
+  </form>
+</body>
+</html>
